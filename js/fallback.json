@@ -1,0 +1,8 @@
+{
+    "articles": [{
+        "title": "Fali to fetch articles",
+        "url": "",
+        "urlToImage": "../images/error-icon.png",
+        "description": "Trying loading the page again when you are online."
+    }]
+}
