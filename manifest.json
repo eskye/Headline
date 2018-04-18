@@ -1,6 +1,6 @@
 {
-    "name": "News Feeder",
-    "short_name": "Bringing happenings about Cryptocurrency and other relevant news to you.",
+    "name": "Headliner",
+    "short_name": "Bringing happenings around to you.",
     "theme_color": "#300953",
     "background_color": "rgba(221,229,236,0.99)",
     "display": "standalone",

@@ -57,8 +57,29 @@ function createArticle(article) {
           
           <p>${article.description}</p>
         </a>
+        </div>`;
+}
+// Fix in the generated post
+function loadPosts(posts) {
+    wrapper.innerHTML = posts.map(post => `
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <img src="${post.urlToImage}">
+        <i class="small material-icons right" id="fav-icon" style="padding: 10px; cursor: pointer;">favorite</i>
+        <p class="btn-flat disabled" id="post-detail">${post.source.name}</p><br>
+        <p class="btn-flat disabled" id="post-detail">${formattingTime(post.publishedAt)}</p>
+      </div>
+      <a href="${post.url}">
+        <div class="card-stacked">
+          <div class="card-content">
+            <h5>${post.title}</h5>
+            <p>${post.description}</p>
+          </div>
         </div>
-    `;
+      </a>
+    </div>
+  </div>`).join("");
 }
 
 function createDB(result) {

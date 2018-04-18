@@ -1,15 +1,15 @@
-var cacheName = 'headline-post-v3';
-const appShellFiles = [
-    './Headline/',
-    './Headline/css/style.css',
-    './Headline/js/app.js',
-    './Headline/js/lib/idb.js',
-    './Headline/images/error-icon.png',
-    './Headline/js/fallback.json'
+var cacheName = 'News-post-v3';
 
+var appShellFiles = [
+    '/',
+    '/index.html',
+    '/app.js',
+    '/idb.js',
+    '/styles.css',
+    '/manifest.json',
+    '/materialize/css/materialize.css',
+    'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
-
-
 
 self.addEventListener('install', (e) => {
     console.log('[ServiceWorker] Install done');
